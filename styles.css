@@ -3,7 +3,12 @@ body {
     background-color: #fff; /* White background */
     margin: 0;
     padding: 0;
-   
+    zoom: 75%; /* Default zoom level for resolutions up to 720p */
+
+    /* Media query for resolutions above 720p */
+    @media screen and (min-width: 1280px) {
+        zoom: 100%;
+    }
 }
 
 .topbar {
