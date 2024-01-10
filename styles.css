@@ -1,70 +1,55 @@
 body {
     font-family: 'Moon-Light', sans-serif;
-    background-color: #fff; /* White background */
+    background-color: #fff;
     margin: 0;
     padding: 0;
-    zoom: 75%; /* Default zoom level for resolutions up to 720p */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0;
+}
 
-    /* Media query for resolutions above 720p */
-    @media screen and (min-width: 1280px) {
-        zoom: 100%;
-    }
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .topbar {
-    background-color:   rgb(65, 65, 65);
+    background-color: rgb(65, 65, 65);
     color: #fff;
     padding: 10px;
     display: flex;
-    justify-content: flex-start; /* Align items to the start (left) */
+    justify-content: flex-start;
     align-items: center;
-}   
+}
 
 .logo {
-   
-    margin: 2%; /* Adjust as needed */
-    width: 27%; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    
+    margin: 2%;
+    width: 27%;
+    height: auto;
 }
 
 .logo img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    object-fit: cover; /* Ensures the entire image is visible without distortion */
-    object-position: center; /* Centers the image within the circle */
+    object-fit: cover;
+    object-position: center;
 }
 
-
 .links a {
-    
     margin-right: 15px;
     color: #fff;
     text-decoration: none;
 }
 
-
-.links-container{
-    margin-top: 20px;
-    margin-bottom: auto;
-    margin-left: auto;
-    color: #fff;
-    text-decoration: none;
-
-}
-
 .content {
     flex: 1;
     font-size: 20px;
-    
     line-height: 1.2;
-    margin-left: 12%; /* Adjust as needed */
-    max-width:auto; /* Adjust as needed */
+    margin-left: 12%;
+    max-width: auto;
 }
 
 .footer {
@@ -72,75 +57,45 @@ body {
     font-size: 10px;
     background-color: rgb(66, 66, 66);
     color: #fff;
-    padding: 10px; /* Adjust padding as needed */
+    padding: 10px;
     text-align: center;
 }
 
-
 .logo-icon {
-    width: 2.2rem; /* Adjust the width as needed */
-    height: 2.2rem; /* Adjust the height as needed */
+    width: 2.2rem;
+    height: 2.2rem;
 }
 
-.footer a {
-    color: #fff;
-    text-decoration: none;
-}
 .about-text {
     color: #fff;
-    font-size: 14px; /* Adjust the font size as needed */
+    font-size: 14px;
     text-align: center;
     padding: 10px;
 }
 
-
-
 .about-section {
-     /* max-width: 100%; Adjust the max-width as needed */
     margin: auto;
 }
 
-.aboutusclass{
+.aboutusclass {
     font-size: 15px;
-   
 }
 
 .about-section h2 {
-    font-size: 24px; /* Adjust the font size as needed */
-}
-
-
-
-#logo1{
-    width: 40px;
-    height: 40px;
-}
-
-#logo2{
-    width: 40px;
-    height: 40px;
-}
-
-#logo3{
-    width: 40px;
-    height: 40px;
+    font-size: 24px;
 }
 
 .wheretoclass {
-    margin-right: 5%;
     line-height: 1.8;
     padding: 1%;
-    width: 27%; /* Adjust as needed */
+    width: 100%;
 }
 
 .container2 {
     margin-top: 3%;
     padding: 2%;
     display: flex;
-   
 }
-
-
 
 .image-container {
     padding: 2%;
@@ -148,30 +103,28 @@ body {
 }
 
 .image-container img {
-    
-    margin: 0 1%; /* Optional: Add margin for spacing between images */
+    margin: 0 1%;
     margin-left: 7%;
-    /*height: 85%;  Maintain the aspect ratio */
 }
-.maps{
+
+.maps {
     width: 95%;
     height: 95%;
 }
 
-.pic1, .pic3 {
+.pic1,
+.pic3 {
     margin-left: 20%;
     box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.4);
-    width: 95%; /* Adjust as needed */
-    max-width: 420px; /* Limit maximum width */
-    height: 95%; /* Maintain aspect ratio */
+    width: 95%;
+    max-width: 420px;
+    height: 95%;
 }
 
-#logo1, #logo2, #logo3 {
-    width: 2vw; /* Adjust as needed */
-    height: 2vw; /* Adjust as needed */
-    border-radius: 50%; /* Make the logos circular */
-    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  Adjust shadow properties */
+#logo1,
+#logo2,
+#logo3 {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
 }
-
-
-
