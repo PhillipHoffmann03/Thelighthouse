@@ -167,7 +167,7 @@ body {
     width: 2vw; /* Adjust as needed */
     height: 2vw; /* Adjust as needed */
     border-radius: 50%; /* Make the logos circular */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjust shadow properties */
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  Adjust shadow properties */
 }
 
 
