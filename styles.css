@@ -96,7 +96,7 @@ body {
 
 
 .about-section {
-    max-width: 870px; /* Adjust the max-width as needed */
+     /* max-width: 100%; Adjust the max-width as needed */
     margin: auto;
 }
 
