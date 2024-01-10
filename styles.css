@@ -4,6 +4,10 @@ body {
     margin: 0;
     padding: 0;
     zoom: 75%; /* Default zoom level for resolutions up to 720p */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 
     /* Media query for resolutions above 720p */
     @media screen and (min-width: 1280px) {
@@ -22,7 +26,7 @@ body {
 
 .logo {
     margin: 2%; /* Adjust as needed */
-    width: 20%; /* Adjust as needed */
+    width: 25%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
     
 }
@@ -54,28 +58,25 @@ body {
 }
 
 .content {
-    
+    flex: 1;
     font-size: 20px;
     margin-left: 40px;
     line-height: 1.2;
 }
 
 .footer {
+    flex-shrink: 0;
     font-size: 10px;
     background-color: rgb(66, 66, 66);
     color: #fff;
     padding: 10px; /* Adjust padding as needed */
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
 
 
 .logo-icon {
-    width: 15px; /* Adjust the width as needed */
-    height: 15px; /* Adjust the height as needed */
+    width: 1.6rem; /* Adjust the width as needed */
+    height: 1.6rem; /* Adjust the height as needed */
 }
 
 .footer a {
@@ -145,14 +146,14 @@ body {
 }
 
 .image-container img {
-    flex: 3;
-    margin: 0 1%; /* Optional: Add margin for spacing between images */
     
-    height: 85%; /* Maintain the aspect ratio */
+    margin: 0 1%; /* Optional: Add margin for spacing between images */
+    margin-left: 7%;
+    /*height: 85%;  Maintain the aspect ratio */
 }
 .maps{
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
 }
 
 .pic1, .pic3 {
