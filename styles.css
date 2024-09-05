@@ -1,3 +1,10 @@
+html{
+    zoom:80%;
+   
+}
+
+
+
 body {
     font-family: 'Moon-Light', sans-serif;
     background-color: #fff;
@@ -49,7 +56,7 @@ body {
 
 .content {
     flex: 1 ;   
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.2;
     margin-left: 12%;
     
@@ -63,7 +70,7 @@ body {
 
 .about-text {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     padding: 10px;
 }
@@ -73,7 +80,7 @@ body {
 }
 
 .aboutusclass {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .about-section h2 {
@@ -135,7 +142,7 @@ body {
 
 .footer a {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
 }
 
