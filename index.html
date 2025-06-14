@@ -4,85 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
     <title>The Lighthouse</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .top-bar {
+            background-color: #212529;
+            padding: 10px 0;
+        }
+
+            .top-bar a img {
+                width: 28px;
+                height: 28px;
+            }
+
+        .logo img {
+            max-width: 120px;
+        }
+
+        .about-section, .location-section {
+            padding: 60px 15px;
+        }
+
+            .about-section h2, .location-section h3 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+        .location-map img, .waffle-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #212529;
+            color: #fff;
+            padding: 20px 10px;
+        }
+
+            .footer a {
+                color: #fff;
+            }
+
+        blockquote {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 767px) {
+            .logo img {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- New Section for Social Icons and Gallery Button -->
-    <div class="container-fluid bg-dark text-white text-center py-3">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <div class="social-icons d-flex justify-content-center align-items-center">
-                    <p class="mr-2 mb-0">Gallery |</p>
-                    <a href="https://wa.me/0746516465" target="_blank" class="px-1">
-                        <img src="whatsapp_logo.png" alt="WhatsApp Logo" class="logo-icon">
-                    </a>
-                    <a href="https://facebook.com/your-facebook-page" target="_blank" class="px-1">
-                        <img src="facebook_logo.png" alt="Facebook Logo" class="logo-icon">
-                    </a>
-                    <a href="https://instagram.com/your-instagram-account" target="_blank" class="px-1">
-                        <img src="instagram_logo.png" alt="Instagram Logo" class="logo-icon">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Top Bar with Bootstrap Classes -->
-    <div class="container-fluid bg-dark text-white mb-5">
-        <div class="row py-2">
-            <div class="col-md-10 col-12 d-flex align-items-center">
-                <div class="logo">
-                    <img src="The lighthouse logo.png" alt="The Lighthouse Logo" class="img-fluid rounded-circle">
-                </div>
-                <div class="content">
-                    <div class="about-section">
-                        <h2>About Us</h2>
-                        <div class="aboutusclass">
-                            <p>Welcome to The Lighthouse, your one-stop destination for Christian gifts! Established on 1 December 2023, in the picturesque town of Dullstroom, Mpumalanga, our store is dedicated to providing a unique selection of Christian gifts for both adults and children.</p>
-                            <p>At The Lighthouse, we believe in spreading positivity, inspiration, and the joy of faith through thoughtful and meaningful gifts. Our curated collection includes a wide range of products that reflect the essence of Christian values.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Where to Find Us Section with Bootstrap Classes -->
-    <div class="container-fluid container2 py-4 mx-auto">
-        <div class="row">
-            <div class="col-md-6 col-12 wheretoclass">
-                <h3 class="mb-4">Where to find us</h3>
-                <p class="text-muted">Visit us in the heart of Dullstroom on the main road, just to the left inside the Dullstroom Waffle House. Our location offers a welcoming atmosphere where you can explore our carefully chosen Christian gifts. Whether you're looking for something special for a friend, family member, or yourself, The Lighthouse is the place to find meaningful and inspiring items that resonate with your faith.</p>
-                <p class="text-muted">Discover the perfect Christian gift at The Lighthouse – a beacon of light in the heart of Dullstroom. We look forward to serving you on your journey of faith and celebration.</p>
-            </div>
-            <div class="col-md-6 col-12 image-container">
-                <a href="https://www.google.com/maps/search/?api=1&query=-25.41913223861824,30.104312968205946" target="_blank">
-                    <img src="mapsiamge.JPG" alt="Map Image" class="maps img-fluid">
+    <!-- Social Bar -->
+    <div class="top-bar text-white text-center">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <span class="me-2">Gallery |</span>
+                <a href="https://wa.me/0746516465" target="_blank" class="text-white mx-2">
+                    <img src="whatsapp_logo.png" alt="WhatsApp">
                 </a>
-                <div class="pic1class">
-                    <img src="waffle.jpeg" alt="Wafflehouse Logo" class="pic1 img-fluid">
-                </div>
-                <!-- <div class="pic3class">
-                    <img src="vmn.jpeg" alt="Vmn Logo" class="pic3 img-fluid">
-                </div> -->
+                <a href="https://facebook.com/your-facebook-page" target="_blank" class="text-white mx-2">
+                    <img src="facebook_logo.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com/your-instagram-account" target="_blank" class="text-white mx-2">
+                    <img src="instagram_logo.png" alt="Instagram">
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- Footer with Bootstrap Classes -->
-    <div class="footer bg-dark text-white py-2">
-        <p class="text-center mb-0"><a href="mailto:chimznel@gmail.com" class="text-white" style="font-size: 14px;">Contact Us</a></p>
-        <p class="text-muted text-center mb-0">&copy; 2023 The Lighthouse. All rights reserved. | <a href="https://drive.google.com/uc?export=download&id=1QQc9CK4HF7n67psSrvwaLbSHHsfwhSWi" download="LightHousePrivacyPolicy.pdf" class="text-white">Download Privacy Policy</a></p>
-    </div>
+    <!-- Hero / About -->
+    <section class="about-section bg-white">
+        <div class="container text-center">
+            <div class="logo mb-4">
+                <img src="The lighthouse logo.png" alt="The Lighthouse Logo" class="img-fluid rounded-circle">
+            </div>
+            <h2>Welcome to The Lighthouse</h2>
+            <p class="lead">Your one-stop destination for Christian gifts</p>
+            <p>Established on 1 December 2023 in Dullstroom, Mpumalanga, The Lighthouse offers a thoughtfully curated collection of Christian gifts for all ages. From spiritual keepsakes to uplifting decor, we aim to inspire and encourage through meaningful items that reflect faith and love.</p>
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <div class="mt-4">
+                <h5>About Dullstroom</h5>
+                <p>Dullstroom is a charming village known for its cool climate, scenic beauty, and tranquil surroundings. It’s a popular destination for fly-fishing, art lovers, nature seekers, and those looking for a peaceful escape in the mountains. With quaint restaurants and unique boutiques, it’s the perfect getaway location.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h3>Where to find us</h3>
+                    <p class="text-muted">You’ll find us on the main road of Dullstroom, just to the left inside the Dullstroom Waffle House. Stop by to explore our Christian gift shop in a peaceful, inviting space filled with inspiration for everyone.</p>
+                    <p class="text-muted">Visit The Lighthouse today – a beacon of faith and light.</p>
+                </div>
+                <div class="col-md-6 location-map">
+                    <a href="https://www.google.com/maps/search/?api=1&query=-25.41913223861824,30.104312968205946" target="_blank">
+                        <img src="mapsiamge.JPG" alt="Map">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waffle Image Section -->
+    <section class="waffle-image bg-white py-5">
+        <div class="container">
+            <img src="waffle.jpeg" alt="Wafflehouse" class="img-fluid w-100">
+        </div>
+    </section>
+
+    <!-- Bible Quote -->
+    <section class="bg-light text-center py-4">
+        <div class="container">
+            <blockquote class="blockquote">
+                <p class="mb-0">"You are the light of the world. A town built on a hill cannot be hidden."</p>
+                <footer class="blockquote-footer">Matthew 5:14 (NIV)</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p><a href="mailto:chimznel@gmail.com">Contact Us</a></p>
+        <p>&copy; 2023 The Lighthouse. All rights reserved.</p>
+        <p><a href="https://drive.google.com/uc?export=download&id=1QQc9CK4HF7n67psSrvwaLbSHHsfwhSWi">Download Privacy Policy</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
